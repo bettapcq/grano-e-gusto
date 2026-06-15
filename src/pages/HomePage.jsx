@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 function HomePage() {
@@ -13,6 +14,7 @@ function HomePage() {
           La nostra terra, il tuo gusto.
         </p>
       </section>
+      <Footer />
     </main>
   );
 }
