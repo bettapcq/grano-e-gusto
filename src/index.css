@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+:root {
+  --color-primary: #846951;
+  --color-secondary: #f4ebdd;
+  --color-accent: #a87949;
+  --color-dark: #2a2a2a;
+
+  --font-title: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+
+  background-image: url("/background_rustico.jpg");
+  background-repeat: cover;
+  background-size: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
