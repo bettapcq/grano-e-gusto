@@ -5,6 +5,7 @@ import HomepageHero from "../components/HomepageHero";
 import StorySection from "../components/StorySection";
 import GallerySection from "../components/GallerySection";
 import OwnerSection from "../components/OwnerSection";
+import EventsSection from "../components/EventsSection";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <StorySection />
         <GallerySection />
         <OwnerSection />
+        <EventsSection />
       </section>
       <Footer />
     </main>
