@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import WheatBackground from "../components/WheatBackground";
 import HomepageHero from "../components/HomepageHero";
 import StorySection from "../components/StorySection";
+import GallerySection from "../components/GallerySection";
 
 function HomePage() {
   return (
@@ -15,6 +16,9 @@ function HomePage() {
         </div>
         <div>
           <StorySection />
+        </div>
+        <div>
+          <GallerySection />
         </div>
       </section>
       <Footer />
