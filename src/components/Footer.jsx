@@ -1,4 +1,5 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { LINKS } from "../config/links";
 
 function Footer() {
   return (
@@ -13,12 +14,12 @@ function Footer() {
         </div>
         <div className="flex flex-col items-center gap-2">
           <div className="flex gap-4 text-xl">
-            <a href="#">
+            <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer">
               <FaInstagram size="20" />
             </a>
 
-            <a href="#">
-              <FaWhatsapp size="20" />
+            <a href={LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp size={20} />
             </a>
           </div>
 
@@ -27,7 +28,7 @@ function Footer() {
             <p>
               Design & Development by{" "}
               <a
-                href="https://anime-portfolio-ep.vercel.app"
+                href={LINKS.betta}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--color-muted)] underline hover:text-[var(--color-accent)]"

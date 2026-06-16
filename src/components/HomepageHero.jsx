@@ -50,7 +50,8 @@ function Hero() {
 
           <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
             <a
-              href="#prenota"
+              href="https://myselforder.lasersoft.it/Public/Home?Id=138731"
+              target="_blank"
               className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
             >
               Prenota un tavolo
