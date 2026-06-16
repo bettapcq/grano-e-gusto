@@ -4,6 +4,7 @@ import WheatBackground from "../components/WheatBackground";
 import HomepageHero from "../components/HomepageHero";
 import StorySection from "../components/StorySection";
 import GallerySection from "../components/GallerySection";
+import OwnerSection from "../components/OwnerSection";
 
 function HomePage() {
   return (
@@ -14,12 +15,9 @@ function HomePage() {
         <div className="relative z-10">
           <HomepageHero />
         </div>
-        <div>
-          <StorySection />
-        </div>
-        <div>
-          <GallerySection />
-        </div>
+        <StorySection />
+        <GallerySection />
+        <OwnerSection />
       </section>
       <Footer />
     </main>
