@@ -23,7 +23,7 @@ function GallerySection() {
   const x = useMotionValue(0);
 
   // velocità di scorrimento automatico (pixel/ms)
-  const speed = 0.05;
+  const speed = 0.03;
 
   const imageWidth = 256;
   const gap = 24;
@@ -54,7 +54,19 @@ function GallerySection() {
   });
 
   return (
-    <section className="relative overflow-hidden bg-[url('/gallery-bg.jpg')] bg-cover bg-center py-16">
+    <motion.section
+      className="relative overflow-hidden bg-[url('/gallery-bg.jpg')] bg-cover bg-center py-16"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{
+        once: true,
+        amount: 0.3,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
+    >
       <div className="mx-auto max-w-5xl px-6 text-center">
         <h2 className="text-2xl font-bold tracking-wide text-[var(--color-dark)]">
           VIVI L'ESPERIENZA
@@ -80,7 +92,7 @@ function GallerySection() {
                 src={img}
                 alt=""
                 draggable="false"
-                className="h-64 w-64 shrink-0 object-cover"
+                className="h-64 w-64 shrink-0 object-cover shadow-lg"
               />
             ))}
           </motion.div>
@@ -94,7 +106,7 @@ function GallerySection() {
           <FaArrowRight />
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
