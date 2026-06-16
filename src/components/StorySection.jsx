@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function StorySection() {
   return (
     <motion.section
-      className="bg-white/30 backdrop-blur-xs bg-opacity-30 py-4 shadow-lg mx-2 md:mx-6 md:max-w-7xl"
+      className="bg-white/30 backdrop-blur-xs py-4 shadow-lg mx-2 md:mx-6 md:max-w-7xl"
       initial={{ x: 120, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{
@@ -24,7 +24,7 @@ function StorySection() {
             una <span className="text-[var(--color-primary)]">passione</span>{" "}
             condivisa.
           </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mt-10 px-6 text-center md:text-start">
+          <p className="text-lg text-gray-700 max-w-2xl mt-10 px-6 text-center md:text-start">
             Crediamo che un ristorante sia prima di tutto una squadra. Sala,
             cucina e pizzeria lavorano ogni giorno con la stessa filosofia: far
             sentire ogni ospite accolto, coccolato e a proprio agio, come fosse
