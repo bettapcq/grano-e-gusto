@@ -37,9 +37,9 @@ function OwnerSection() {
             Al cuore di questa avventura c'è <strong>Mattia Ambrosi</strong>,
             giovane pizzaiolo che ha trasformato una passione nata quasi per
             caso in una professione costruita con studio, esperienza e ricerca
-            continua. Per Mattia la formazione non ha mai fine: più ci si
-            aggiorna, più si riesce a offrire un prodotto e un servizio
-            migliori.
+            continua. <br />
+            Per Mattia la formazione non ha mai fine: più ci si aggiorna, più si
+            riesce a offrire un prodotto e un servizio migliori.
           </p>
         </div>
       </div>
