@@ -3,7 +3,7 @@ import { LINKS } from "../config/links";
 
 function Footer() {
   return (
-    <footer className="bg-[var(--color-footer)] text-[var(--color-muted)] shadow-lg">
+    <footer className="bg-[var(--color-footer)] text-[var(--color-muted)] shadow-lg mt-12">
       <div className="mx-auto flex flex-col items-center gap-6 px-6 py-6 md:grid md:max-w-7xl md:grid-cols-3 md:items-center">
         <div className="flex items-center md:justify-start gap-2 py-4">
           <img
