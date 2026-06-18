@@ -3,5 +3,7 @@ export const LINKS = {
   instagram: "https://instagram.com/_granoegusto_",
   booking: "https://myselforder.lasersoft.it/Public/Home?Id=138731",
   telephone: "tel:+390114918422",
+  email: "mailto:info@granoegusto.it",
+  maps: "https://www.google.com/maps?q=Grano%20e%20Gusto%20Via%20Torino%2027%20Sant%27Antonino%20di%20Susa&output=embed",
   betta: "https://anime-portfolio-ep.vercel.app",
 };

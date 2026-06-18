@@ -37,8 +37,8 @@ function EventsSection() {
         </motion.div>
         <motion.div
           className="flex flex-col items-center justify-center mx-4 md:mx-0"
-          initial={{ x: 150, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 350, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{
             once: true,
             amount: 0.3,

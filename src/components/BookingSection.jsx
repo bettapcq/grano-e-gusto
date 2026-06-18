@@ -3,15 +3,27 @@ import {
   FaEnvelope,
   FaClock,
   FaMapMarkerAlt,
-  FaGlobe,
-  FaGlobeEurope,
+  FaInstagram,
 } from "react-icons/fa";
-import { FaWebAwesome } from "react-icons/fa6";
 import { LINKS } from "../config/links";
+import { motion } from "framer-motion";
 
 function BookingSection() {
   return (
-    <section id="contatti" className="py-8 mx-2 md:mx-6 md:max-w-7xl">
+    <motion.section
+      id="contatti"
+      className="py-8 mx-2 relative z-20 -mt-50 md:mx-auto md:w-full max-w-[1180px] shadow-lg"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{
+        once: true,
+        amount: 0.3,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
+    >
       <div
         className="relative min-h-[230px] flex flex-col items-center justify-center text-center overflow-hidden"
         style={{
@@ -27,10 +39,10 @@ function BookingSection() {
             Prenota il tuo tavolo
           </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
               href={LINKS.telephone}
-              className="bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
+              className="bg-[var(--color-accent)]/70 hover:bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
             >
               Chiamaci
             </a>
@@ -39,14 +51,77 @@ function BookingSection() {
               href={LINKS.booking}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
+              className="bg-[var(--color-accent)]/70 hover:bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
             >
               Prenota online
             </a>
           </div>
         </div>
       </div>
-    </section>
+
+      <div className="bg-white/80 backdrop-blur-sm grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-8 shadow-md items-center md:items-start">
+        <div>
+          <h3 className="text-xl font-bold text-[var(--color-primary)] mb-5 text-center md:text-start">
+            VIENI A TROVARCI
+          </h3>
+
+          <div className="space-y-5 text-sm text-[var(--color-dark)]">
+            <div className="flex gap-3">
+              <FaMapMarkerAlt className="mt-1 text-[var(--color-accent)]" />
+              <div>
+                <p className="font-semibold text-start">Via Torino, 27</p>
+                <p>10050 - Sant&apos;Antonino di Susa (TO)</p>
+              </div>
+            </div>
+
+            <div className="flex gap-3">
+              <FaClock className="mt-1 text-[var(--color-accent)]" />
+              <div className="text-start ">
+                <p className="font-semibold ">Aperto 7 su 7</p>
+                <p>19-23 lunedì-giovedì</p>
+                <p>19-24 venerdì-domenica</p>
+              </div>
+            </div>
+
+            <div className="flex gap-3">
+              <FaPhoneAlt className="mt-1 text-[var(--color-accent)]" />
+              <div>
+                <a href={LINKS.telephone}>011 4918422 </a>
+              </div>
+            </div>
+
+            <div className="flex gap-3">
+              <FaEnvelope className="mt-1 text-[var(--color-accent)]" />
+              <div>
+                <a href={LINKS.email}>info@granoegusto.it</a>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <FaInstagram className="mt-1 text-[var(--color-accent)]" />
+              <div>
+                <a
+                  href={LINKS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  _granoegusto_
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="min-h-[300px] overflow-hidden">
+          <iframe
+            title="Mappa Grano e Gusto"
+            src={LINKS.maps}
+            className="w-full h-full min-h-[300px] border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+    </motion.section>
   );
 }
 
