@@ -7,6 +7,7 @@ import GallerySection from "../components/GallerySection";
 import OwnerSection from "../components/OwnerSection";
 import EventsSection from "../components/EventsSection";
 import BookingSection from "../components/BookingSection";
+import WhatsappButton from "../components/WhatsappButton";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
         <OwnerSection />
         <EventsSection />
         <BookingSection />
+        <WhatsappButton />
       </section>
       <Footer />
     </main>
