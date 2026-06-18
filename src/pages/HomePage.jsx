@@ -6,6 +6,7 @@ import StorySection from "../components/StorySection";
 import GallerySection from "../components/GallerySection";
 import OwnerSection from "../components/OwnerSection";
 import EventsSection from "../components/EventsSection";
+import BookingSection from "../components/BookingSection";
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
         <GallerySection />
         <OwnerSection />
         <EventsSection />
+        <BookingSection />
       </section>
       <Footer />
     </main>
