@@ -1,3 +1,5 @@
+import { LINKS } from "../config/links";
+
 function MenuHero() {
   return (
     <section className="w-80 md:w-full flex items-center">
@@ -16,6 +18,15 @@ function MenuHero() {
           materia prima, alle tecniche di lavorazione e alla continua ricerca
           del miglior risultato possibile.{" "}
         </p>
+        <div className="mx-auto mt-10">
+          <a
+            href={LINKS.booking}
+            target="_blank"
+            className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+          >
+            Prenota un tavolo
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import MenuItems from "./MenuItems";
 
 function MenuSection() {
+  //metodo per prendere tutte le immagini di una cartella e creare un array:
   const menuPizzeria = Object.values(
     import.meta.glob("../assets/menuPizzeria/*.{jpg,jpeg,png,webp}", {
       eager: true,
