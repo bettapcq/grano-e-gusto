@@ -18,7 +18,7 @@ function Navbar() {
           />
         </a>
 
-        <div className="ml-12 hidden items-center gap-8 md:flex text-[var(--color-primary)]">
+        <div className="ml-12 flex items-center gap-8 md:flex text-[var(--color-primary)]">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -38,16 +38,6 @@ function Navbar() {
             }
           >
             Menu
-          </NavLink>
-          <NavLink
-            to="/contatti"
-            className={({ isActive }) =>
-              isActive
-                ? "border-b-2 border-[var(--color-accent)] pb-1"
-                : "pb-1 hover:border-b-2 hover:border-[var(--color-accent)]"
-            }
-          >
-            Contatti
           </NavLink>
         </div>
         <div className="relative ml-auto">
