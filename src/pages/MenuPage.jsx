@@ -10,12 +10,12 @@ function MenuPage() {
     <main className="relative min-h-screen bg-[var(--color-bg)]">
       <WheatBackground />
       <Navbar />
-      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden text-center">
+      <section className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden text-center pt-35 md:pt-40">
         <div className="relative z-10">
           <MenuHero />
         </div>
-
-        <BookingSection />
+        {/* 
+        <BookingSection /> */}
         <WhatsappButton />
       </section>
       <Footer />
