@@ -48,11 +48,11 @@ function MenuSection() {
             <button
               key={item}
               onClick={() => setSelectedMenu(item)}
-              className={`border px-5 py-2 text-xs font-semibold transition
+              className={`border px-5 py-2 text-xs font-bold transition
                 ${
                   selectedMenu === item
-                    ? "bg-[var(--color-primary)] text-white"
-                    : "border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white"
+                    ? "bg-[var(--color-menu)] text-white"
+                    : "border-[var(--color-menu)] text-[var(--color-menu)] hover:bg-[var(--color-menu)] hover:text-white"
                 }`}
             >
               {item}

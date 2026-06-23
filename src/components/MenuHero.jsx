@@ -18,13 +18,21 @@ function MenuHero() {
           materia prima, alle tecniche di lavorazione e alla continua ricerca
           del miglior risultato possibile.{" "}
         </p>
-        <div className="mx-auto mt-10">
+        <div className="my-8 py-3 flex w-full flex-col w-auto items-center justify-between min-h-25">
           <a
             href={LINKS.booking}
             target="_blank"
-            className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+            className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
           >
             Prenota un tavolo
+          </a>
+
+          <a
+            href={LINKS.telephone}
+            target="_blank"
+            className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+          >
+            Chiamaci
           </a>
         </div>
       </div>
