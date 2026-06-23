@@ -1,9 +1,15 @@
 import { LINKS } from "../config/links";
+import { motion } from "framer-motion";
 
 function MenuHero() {
   return (
     <section className="w-80 md:w-full flex items-center">
-      <div className="w-full max-w-lg text-center">
+      <motion.div
+        className="w-full max-w-lg text-center"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
         <h1 className="text-2xl md:text-4xl font-bold">IL NOSTRO MENU</h1>
 
         <img
@@ -35,7 +41,7 @@ function MenuHero() {
             Chiamaci
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

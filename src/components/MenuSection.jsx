@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MenuItems from "./MenuItems";
+import { motion } from "framer-motion";
 
 function MenuSection() {
   //metodo per prendere tutte le immagini di una cartella e creare un array:
@@ -41,7 +42,12 @@ function MenuSection() {
   const [selectedMenu, setSelectedMenu] = useState("Pizzeria");
 
   return (
-    <section className="px-4 py-10">
+    <motion.section
+      className="px-4 py-10"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+    >
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
           {Object.keys(menus).map((item) => (
@@ -62,7 +68,7 @@ function MenuSection() {
 
         <MenuItems menuType={menus[selectedMenu]} />
       </div>
-    </section>
+    </motion.section>
   );
 }
 
