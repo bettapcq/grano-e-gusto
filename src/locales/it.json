@@ -7,5 +7,14 @@
     "titleLine2Accent": "gusto",
     "bookingButton": "Prenota un tavolo",
     "menuButton": "Guarda il menu"
+  },
+
+  "story": {
+     "titleLine1": "Una squadra giovane,",
+     "titleLine2Before": "una",
+     "titleLine2Accent": "passione",
+     "titleLine2After": "condivisa.",
+     "paragraph": "Crediamo che un ristorante sia prima di tutto una squadra. Sala, cucina e pizzeria lavorano ogni giorno con la stessa filosofia: far sentire ogni ospite accolto, coccolato e a proprio agio, come fosse a casa.",
+     "altTeam": "Il team di Grano e Gusto"
   }
 }

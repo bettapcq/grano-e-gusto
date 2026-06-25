@@ -7,5 +7,15 @@
     "titleLine2Accent": "taste",
     "bookingButton": "Book a table",
     "menuButton": "View the menu"
-  }
+  },
+
+  "story": {
+  "titleLine1": "A young team,",
+  "titleLine2Before": "a",
+  "titleLine2Accent": "shared",
+  "titleLine2After": "passion.",
+  "paragraph": "We believe a restaurant is, above all, about teamwork. Our dining room, kitchen, and pizzeria work together every day with the same philosophy: to make every guest feel welcome, cared for, and completely at home.",
+  "altTeam": "Grano e Gusto Team"
+}
+
 }
