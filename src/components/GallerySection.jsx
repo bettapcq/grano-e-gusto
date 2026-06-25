@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const images = [
   "/gallery/foto1.jpeg",
@@ -19,6 +20,8 @@ const images = [
 ];
 
 function GallerySection() {
+  const { t } = useTranslation();
+
   // posizione orizzontale del carosello
   const x = useMotionValue(0);
 
@@ -69,7 +72,7 @@ function GallerySection() {
     >
       <div className="mx-auto max-w-5xl px-6 text-center">
         <h2 className="text-2xl font-bold tracking-wide text-[var(--color-dark)]">
-          VIVI L'ESPERIENZA
+          {t("gallery.titleLine")}
         </h2>
 
         <img
@@ -90,7 +93,7 @@ function GallerySection() {
               <img
                 key={index}
                 src={img}
-                alt=""
+                alt={t("gallery.altPictures")}
                 draggable="false"
                 className="h-64 w-64 shrink-0 object-cover shadow-lg"
               />
@@ -100,9 +103,9 @@ function GallerySection() {
 
         <a
           href="/menu"
-          className="mx-auto mt-8 inline-flex items-center gap-2  bg-[var(--color-primary)] px-5 py-2 text-xs uppercase tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
+          className="mx-auto mt-8 inline-flex items-center gap-2  bg-[var(--color-primary)] px-5 py-2 text-xs tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
         >
-          Scopri il menu completo
+          {t("gallery.menuButton")}
           <FaArrowRight />
         </a>
       </div>

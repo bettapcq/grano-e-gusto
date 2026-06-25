@@ -16,5 +16,10 @@
      "titleLine2After": "condivisa.",
      "paragraph": "Crediamo che un ristorante sia prima di tutto una squadra. Sala, cucina e pizzeria lavorano ogni giorno con la stessa filosofia: far sentire ogni ospite accolto, coccolato e a proprio agio, come fosse a casa.",
      "altTeam": "Il team di Grano e Gusto"
+  },
+
+  "gallery": {
+    "altPictures": "galleria foto di Grano e Gusto",
+    "menuButton": "SCOPRI IL MENU COMPLETO"
   }
 }
