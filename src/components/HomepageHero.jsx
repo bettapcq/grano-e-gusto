@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { LINKS } from "../config/links";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen w-full">
       <motion.img
         src="/pizza_hero.png"
-        alt="Focaccia ai pomodorini e basilico"
+        alt={t("hero.altPizza")}
         className="pointer-events-none absolute left-[58vw] top-[36%] z-0 w-[55vw] max-w-none -translate-y-1/2 md:left-[50vw] md:top-[60%] md:w-[48vw]"
         initial={{
           x: "35vw",
@@ -38,14 +41,19 @@ function Hero() {
           />
           <img
             src="/divider.png"
-            alt="Grano e Gusto divider"
+            alt={t("hero.altDivider")}
             className="w-72 md:w-96"
           />
 
           <div className="mt-6 text-3xl font-bold leading-8 text-[var(--color-dark)]">
-            <h1>La nostra terra,</h1>
+            <h1>{t("hero.titleLine1")}</h1>
             <h1 className="mt-2">
-              il tuo <span className="text-[var(--color-primary)]">gusto</span>.
+              {t("hero.titleLine2Before")}
+              <span className="text-[var(--color-primary)]">
+                {" "}
+                {t("hero.titleLine2Accent")}
+              </span>
+              .
             </h1>
           </div>
 
@@ -55,15 +63,15 @@ function Hero() {
               target="_blank"
               className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
             >
-              Prenota un tavolo
+              {t("hero.bookingButton")}
             </a>
 
             <a
-              href={LINKS.instagram}
+              href="/menu"
               target="_blank"
               className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
             >
-              Guarda il menu
+              {t("hero.menuButton")}
             </a>
           </div>
         </div>

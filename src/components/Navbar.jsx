@@ -1,11 +1,21 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const itLogo = "/it.png";
   const enLogo = "/en.png";
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [language, setLanguage] = useState("IT");
+
+  const { t, i18n } = useTranslation();
+
+  const currentLanguage = i18n.language === "en" ? "EN" : "IT";
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+    setIsLanguageOpen(false);
+  };
 
   return (
     <header className="fixed top-5 left-0 z-50 w-full px-6 py-5 bg-[var(--color-secondary)] shadow-lg">
@@ -45,10 +55,10 @@ function Navbar() {
             onClick={() => setIsLanguageOpen(!isLanguageOpen)}
             className="flex items-center gap-1 text-[#846951]"
           >
-            {language === "IT" ? (
-              <img src={itLogo} alt="Italiano" className="w-6 h-6" />
+            {currentLanguage === "IT" ? (
+              <img src={itLogo} alt="Italiano" className="h-6 w-6" />
             ) : (
-              <img src={enLogo} alt="English" className="w-6 h-6" />
+              <img src={enLogo} alt="English" className="h-6 w-6" />
             )}
             <span className="text-xs">▼</span>
           </button>
@@ -57,7 +67,7 @@ function Navbar() {
             <div className="absolute right-0 mt-3 w-28 rounded-xl bg-white p-2 shadow-lg">
               <button
                 onClick={() => {
-                  setLanguage("IT");
+                  changeLanguage("it");
                   setIsLanguageOpen(false);
                 }}
                 className="flex  w-full rounded-lg px-3 py-2 text-center text-sm hover:bg-[var(--color-secondary)]"
@@ -67,7 +77,7 @@ function Navbar() {
 
               <button
                 onClick={() => {
-                  setLanguage("EN");
+                  changeLanguage("en");
                   setIsLanguageOpen(false);
                 }}
                 className="flex w-full rounded-lg px-3 py-2 text-left text-sm hover:bg-[var(--color-secondary)]"
