@@ -32,5 +32,12 @@
     "paragraphStrong": "Mattia Ambrosi",
     "paragraphAfter1": ", giovane pizzaiolo che ha trasformato una passione nata quasi per caso in una professione costruita con studio, esperienza e ricerca continua.",
     "paragraphAfter2": "Per Mattia la formazione non ha mai fine: più ci si aggiorna, più si riesce a offrire un prodotto e un servizio migliori."
-  }
+  },
+
+  "events": {
+    "titleLine": "I NOSTRI EVENTI",
+"paragraph1": "Serate a tema, eventi speciali e novità dal nostro mondo.",
+"paragraph2": "Seguici su Instagram per rimanere sempre aggiornato!",
+"igButton": "Scopri il nostro Instagram"
+}
 }
