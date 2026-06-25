@@ -39,5 +39,16 @@
 "paragraph1": "Serate a tema, eventi speciali e novità dal nostro mondo.",
 "paragraph2": "Seguici su Instagram per rimanere sempre aggiornato!",
 "igButton": "Scopri il nostro Instagram"
+},
+
+"booking": {
+    "titleLine": "Prenota il tuo tavolo",
+    "callButton": "Chiamaci",
+    "onlineButton": "Prenota online",
+    "titleLine2": "VIENI A TROVARCI",
+    "openingDays": "Aperto 7 su 7",
+    "openingHours1": "19-23 lunedì-giovedì",
+    "openingHours2": "19-24 venerdì-domenica"
+
 }
 }

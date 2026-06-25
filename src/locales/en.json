@@ -39,5 +39,15 @@
   "paragraph1": "Themed evenings, special events, and the latest news from Grano e Gusto.",
   "paragraph2": "Follow us on Instagram to stay up to date!",
   "igButton": "Discover our Instagram"
+},
+
+"booking": {
+  "titleLine": "Book Your Table",
+  "callButton": "Call Us",
+  "onlineButton": "Book Online",
+  "titleLine2": "COME AND VISIT US",
+  "openingDays": "Open 7 Days a Week",
+  "openingHours1": "Mon–Thu: 7:00 PM – 11:00 PM",
+  "openingHours2": "Fri–Sun: 7:00 PM – 12:00 AM"
 }
 }

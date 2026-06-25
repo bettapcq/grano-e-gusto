@@ -7,8 +7,11 @@ import {
 } from "react-icons/fa";
 import { LINKS } from "../config/links";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function BookingSection() {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="contatti"
@@ -36,7 +39,7 @@ function BookingSection() {
 
         <div className="relative z-10 px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Prenota il tuo tavolo
+            {t("booking.titleLine")}
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -44,7 +47,7 @@ function BookingSection() {
               href={LINKS.telephone}
               className="bg-[var(--color-accent)]/70 hover:bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
             >
-              Chiamaci
+              {t("booking.callButton")}
             </a>
 
             <a
@@ -53,7 +56,7 @@ function BookingSection() {
               rel="noopener noreferrer"
               className="bg-[var(--color-accent)]/70 hover:bg-[var(--color-accent)] text-white px-8 py-3 text-sm font-semibold"
             >
-              Prenota online
+              {t("booking.onlineButton")}
             </a>
           </div>
         </div>
@@ -62,7 +65,7 @@ function BookingSection() {
       <div className="bg-white/80 backdrop-blur-sm grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-8 shadow-md items-center md:items-start">
         <div>
           <h3 className="text-xl font-bold text-[var(--color-primary)] mb-5 text-center md:text-start">
-            VIENI A TROVARCI
+            {t("booking.titleLine2")}
           </h3>
 
           <div className="space-y-5 text-sm text-[var(--color-dark)]">
@@ -77,9 +80,9 @@ function BookingSection() {
             <div className="flex gap-3">
               <FaClock className="mt-1 text-[var(--color-accent)]" />
               <div className="text-start ">
-                <p className="font-semibold ">Aperto 7 su 7</p>
-                <p>19-23 lunedì-giovedì</p>
-                <p>19-24 venerdì-domenica</p>
+                <p className="font-semibold ">{t("booking.openinDays")}</p>
+                <p>{t("booking.openingHours1")}</p>
+                <p>{t("booking.openingHours2")}</p>
               </div>
             </div>
 
