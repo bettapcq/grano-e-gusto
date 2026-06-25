@@ -22,6 +22,15 @@
   "titleLine": "ENJOY THE EXPERIENCE",
   "altPictures": "Grano e Gusto photo gallery",
   "menuButton": "DISCOVER THE FULL MENU"
-}
+},
 
+"owner": {
+  "titleLineBefore": "The heart of the",
+  "titleLineAccent": "project",
+  "altOwner": "Mattia Ambrosi, the heart behind Grano e Gusto",
+  "paragraphBefore": "At the heart of this journey is",
+  "paragraphStrong": "Mattia Ambrosi",
+  "paragraphAfter1": ", a young pizza chef who turned a passion discovered almost by chance into a profession built on dedication, continuous learning, and experience.",
+  "paragraphAfter2": "For Mattia, learning never stops: the more you grow and refine your skills, the better the food and the experience you can offer your guests."
+}
 }

@@ -19,7 +19,18 @@
   },
 
   "gallery": {
+    "titleLine": "VIVI L'ESPERIENZA",
     "altPictures": "galleria foto di Grano e Gusto",
     "menuButton": "SCOPRI IL MENU COMPLETO"
+  },
+
+  "owner": {
+    "titleLineBefore" : "L'anima del",
+    "titleLineAccent" : "progetto",
+    "altOwner": "Mattia Ambrosi, l'anima della pizzeria Grano e Gusto",
+    "paragraphBefore":   "Al cuore di questa avventura c'è",
+    "paragraphStrong": "Mattia Ambrosi",
+    "paragraphAfter1": ", giovane pizzaiolo che ha trasformato una passione nata quasi per caso in una professione costruita con studio, esperienza e ricerca continua.",
+    "paragraphAfter2": "Per Mattia la formazione non ha mai fine: più ci si aggiorna, più si riesce a offrire un prodotto e un servizio migliori."
   }
 }
