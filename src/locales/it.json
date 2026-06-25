@@ -56,5 +56,14 @@
     "paragraphBefore": "Ogni piatto e ogni pizza nascono dalla stessa",
     "paragraphAccent": "attenzione",
     "paragraphAfter": "materia prima, alle tecniche di lavorazione e alla continua ricerca del miglior risultato possibile."
+},
+
+"menuSection": {
+  "tabs": {
+    "pizzeria": "Pizzeria",
+    "restaurant": "Ristorante",
+    "desserts": "Dolci",
+    "drinks": "Bevande"
+  }
 }
 }

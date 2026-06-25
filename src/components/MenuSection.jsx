@@ -1,45 +1,73 @@
 import { useState } from "react";
 import MenuItems from "./MenuItems";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function MenuSection() {
+  const { t, i18n } = useTranslation();
+
+  const currentLanguage = i18n.language === "en" ? "en" : "it";
+
   //metodo per prendere tutte le immagini di una cartella e creare un array:
-  const menuPizzeria = Object.values(
-    import.meta.glob("../assets/menuPizzeria/*.{jpg,jpeg,png,webp}", {
-      eager: true,
-      import: "default",
-    }),
-  );
+  const menuImages = {
+    it: {
+      pizzeria: Object.values(
+        import.meta.glob("../assets/menu/it/pizzeria/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      restaurant: Object.values(
+        import.meta.glob("../assets/menu/it/restaurant/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      desserts: Object.values(
+        import.meta.glob("../assets/menu/it/desserts/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      drinks: Object.values(
+        import.meta.glob("../assets/menu/it/drinks/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+    },
 
-  const menuRistorante = Object.values(
-    import.meta.glob("../assets/menuRistorante/*.{jpg,jpeg,png,webp}", {
-      eager: true,
-      import: "default",
-    }),
-  );
-
-  const menuDolci = Object.values(
-    import.meta.glob("../assets/menuDolci/*.{jpg,jpeg,png,webp}", {
-      eager: true,
-      import: "default",
-    }),
-  );
-
-  const menuBevande = Object.values(
-    import.meta.glob("../assets/menuBevande/*.{jpg,jpeg,png,webp}", {
-      eager: true,
-      import: "default",
-    }),
-  );
-
-  const menus = {
-    Pizzeria: menuPizzeria,
-    Ristorante: menuRistorante,
-    Dolci: menuDolci,
-    Bevande: menuBevande,
+    en: {
+      pizzeria: Object.values(
+        import.meta.glob("../assets/menu/en/pizzeria/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      restaurant: Object.values(
+        import.meta.glob("../assets/menu/en/restaurant/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      desserts: Object.values(
+        import.meta.glob("../assets/menu/en/desserts/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      drinks: Object.values(
+        import.meta.glob("../assets/menu/en/drinks/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+    },
   };
 
-  const [selectedMenu, setSelectedMenu] = useState("Pizzeria");
+  const menuTabs = ["pizzeria", "restaurant", "desserts", "drinks"];
+
+  const [selectedMenu, setSelectedMenu] = useState("pizzeria");
 
   return (
     <motion.section
@@ -50,7 +78,7 @@ function MenuSection() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
-          {Object.keys(menus).map((item) => (
+          {menuTabs.map((item) => (
             <button
               key={item}
               onClick={() => setSelectedMenu(item)}
@@ -61,12 +89,12 @@ function MenuSection() {
                     : "border-[var(--color-menu)] text-[var(--color-menu)] hover:bg-[var(--color-menu)] hover:text-white"
                 }`}
             >
-              {item}
+              {t(`menuSection.tabs.${item}`)}
             </button>
           ))}
         </div>
 
-        <MenuItems menuType={menus[selectedMenu]} />
+        <MenuItems menuType={menuImages[currentLanguage][selectedMenu]} />
       </div>
     </motion.section>
   );

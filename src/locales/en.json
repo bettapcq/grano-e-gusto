@@ -56,5 +56,14 @@
   "paragraphBefore": "Every dish and every pizza is crafted with the same",
   "paragraphAccent": "care",
   "paragraphAfter": "for quality ingredients, traditional techniques, and the constant pursuit of the best possible result."
+},
+
+"menuSection": {
+ "tabs": {
+    "pizzeria": "Pizzeria",
+    "restaurant": "Restaurant",
+    "desserts": "Desserts",
+    "drinks": "Drinks"
+  }
 }
 }
