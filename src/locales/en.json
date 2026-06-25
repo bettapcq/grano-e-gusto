@@ -49,5 +49,12 @@
   "openingDays": "Open 7 Days a Week",
   "openingHours1": "Mon–Thu: 7:00 PM – 11:00 PM",
   "openingHours2": "Fri–Sun: 7:00 PM – 12:00 AM"
+},
+
+"menuHero": {
+  "titleLine": "OUR MENU",
+  "paragraphBefore": "Every dish and every pizza is crafted with the same",
+  "paragraphAccent": "care",
+  "paragraphAfter": "for quality ingredients, traditional techniques, and the constant pursuit of the best possible result."
 }
 }

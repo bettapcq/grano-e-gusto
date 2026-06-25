@@ -49,6 +49,12 @@
     "openingDays": "Aperto 7 su 7",
     "openingHours1": "19-23 lunedì-giovedì",
     "openingHours2": "19-24 venerdì-domenica"
+},
 
+"menuHero": {
+    "titleLine": "IL NOSTRO MENU",
+    "paragraphBefore": "Ogni piatto e ogni pizza nascono dalla stessa",
+    "paragraphAccent": "attenzione",
+    "paragraphAfter": "materia prima, alle tecniche di lavorazione e alla continua ricerca del miglior risultato possibile."
 }
 }

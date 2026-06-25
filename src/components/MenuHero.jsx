@@ -1,7 +1,10 @@
 import { LINKS } from "../config/links";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function MenuHero() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-80 md:w-full flex items-center">
       <motion.div
@@ -10,7 +13,9 @@ function MenuHero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
-        <h1 className="text-2xl md:text-4xl font-bold">IL NOSTRO MENU</h1>
+        <h1 className="text-2xl md:text-4xl font-bold">
+          {t("menuHero.titleLine")}
+        </h1>
 
         <img
           src="/divider.png"
@@ -19,10 +24,12 @@ function MenuHero() {
         />
 
         <p className="mt-4 text-md md:text-lg">
-          Ogni piatto e ogni pizza nascono dalla stessa{" "}
-          <span className="text-[var(--color-primary)]">attenzione</span> alla
-          materia prima, alle tecniche di lavorazione e alla continua ricerca
-          del miglior risultato possibile.{" "}
+          {t("menuHero.paragraphBefore")}{" "}
+          <span className="text-[var(--color-primary)]">
+            {t("menuHero.paragraphAccent")}
+          </span>{" "}
+          alla
+          {t("menuHero.paragraphAfter")}{" "}
         </p>
         <div className="my-8 py-3 flex w-full flex-col w-auto items-center justify-between min-h-25">
           <a
@@ -30,7 +37,7 @@ function MenuHero() {
             target="_blank"
             className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
           >
-            Prenota un tavolo
+            {t("hero.bookingButton")}
           </a>
 
           <a
@@ -38,7 +45,7 @@ function MenuHero() {
             target="_blank"
             className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
           >
-            Chiamaci
+            {t("booking.callButton")}
           </a>
         </div>
       </motion.div>
