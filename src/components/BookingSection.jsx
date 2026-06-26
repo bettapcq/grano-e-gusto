@@ -80,7 +80,7 @@ function BookingSection() {
             <div className="flex gap-3">
               <FaClock className="mt-1 text-[var(--color-accent)]" />
               <div className="text-start ">
-                <p className="font-semibold ">{t("booking.openinDays")}</p>
+                <p className="font-semibold ">{t("booking.openingDays")}</p>
                 <p>{t("booking.openingHours1")}</p>
                 <p>{t("booking.openingHours2")}</p>
               </div>
