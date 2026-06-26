@@ -20,13 +20,13 @@ function Navbar() {
   return (
     <header className="fixed top-5 left-0 z-50 w-full px-6 py-5 bg-[var(--color-secondary)] shadow-lg">
       <nav className="mx-auto flex max-w-6xl items-center">
-        <a href="/">
+        <NavLink to="/" aria-label="Vai alla homepage di Grano e Gusto">
           <img
             src="/logo_rotondo.png"
             alt="Grano e Gusto"
             className="h-14 w-auto"
           />
-        </a>
+        </NavLink>
 
         <div className="ml-12 flex items-center gap-8 md:flex text-[var(--color-primary)]">
           <NavLink
@@ -54,6 +54,9 @@ function Navbar() {
           <button
             onClick={() => setIsLanguageOpen(!isLanguageOpen)}
             className="flex items-center gap-1 text-[#846951]"
+            aria-label="Cambia lingua"
+            aria-haspopup="menu"
+            aria-expanded={isLanguageOpen}
           >
             {currentLanguage === "IT" ? (
               <img src={itLogo} alt="Italiano" className="h-6 w-6" />
@@ -70,6 +73,7 @@ function Navbar() {
                   changeLanguage("it");
                   setIsLanguageOpen(false);
                 }}
+                aria-label="Imposta lingua italiana"
                 className="flex  w-full rounded-lg px-3 py-2 text-center text-sm hover:bg-[var(--color-secondary)]"
               >
                 <img src={itLogo} alt="Italiano" className="w-6 h-6" />
@@ -80,6 +84,7 @@ function Navbar() {
                   changeLanguage("en");
                   setIsLanguageOpen(false);
                 }}
+                aria-label="Imposta lingua inglese"
                 className="flex w-full rounded-lg px-3 py-2 text-left text-sm hover:bg-[var(--color-secondary)]"
               >
                 <img src={enLogo} alt="English" className="w-6 h-6" />

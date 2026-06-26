@@ -22,8 +22,7 @@ function StorySection() {
         <div>
           <h2 className="text-3xl pt-4 mx-6 font-bold text-center md:text-start mb-3">
             {t("story.titleLine1")}
-          </h2>
-          <h2 className="text-3xl px-6 font-bold text-center md:text-start mb-6">
+            <br />
             {t("story.titleLine2Before")}{" "}
             <span className="text-[var(--color-primary)]">
               {t("story.titleLine2Accent")}
@@ -38,6 +37,7 @@ function StorySection() {
           <img
             src="/team.jpeg"
             alt={t("story.altTeam")}
+            loading="lazy"
             className="
       w-full
     h-full

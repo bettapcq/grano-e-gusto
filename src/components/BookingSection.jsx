@@ -89,14 +89,21 @@ function BookingSection() {
             <div className="flex gap-3">
               <FaPhoneAlt className="mt-1 text-[var(--color-accent)]" />
               <div>
-                <a href={LINKS.telephone}>011 4918422 </a>
+                <a href={LINKS.telephone} aria-label="Chiama Grano e Gusto">
+                  011 4918422{" "}
+                </a>
               </div>
             </div>
 
             <div className="flex gap-3">
               <FaEnvelope className="mt-1 text-[var(--color-accent)]" />
               <div>
-                <a href={LINKS.email}>info@granoegusto.it</a>
+                <a
+                  href={LINKS.email}
+                  aria-label="Invia una email a Grano e Gusto"
+                >
+                  info@granoegusto.it
+                </a>
               </div>
             </div>
             <div className="flex gap-3">
@@ -106,6 +113,7 @@ function BookingSection() {
                   href={LINKS.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Apri il profilo Instagram di Grano e Gusto"
                 >
                   _granoegusto_
                 </a>

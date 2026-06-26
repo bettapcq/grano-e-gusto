@@ -33,7 +33,7 @@ function EventsSection() {
             href={LINKS.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center self-center md:self-end gap-2  bg-[var(--color-primary)] px-5 py-2 text-xs uppercase tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
+            className="mt-8 inline-flex items-center self-center md:self-end gap-2  bg-[var(--color-primary)] border border-[var(--color-primary)] px-5 py-2 text-xs uppercase tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
           >
             {t("events.igButton")} <FaArrowRight />
           </a>
@@ -53,6 +53,7 @@ function EventsSection() {
         >
           <img
             src="/smartphone.png"
+            loading="lazy"
             alt="Eventi della pizzeria Grano e Gusto su Instagram"
             className="w-full h-full md:max-w-lg p-2 object-cover"
           />

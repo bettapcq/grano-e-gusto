@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { LINKS } from "../config/links";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Hero() {
   const { t } = useTranslation();
@@ -41,13 +42,15 @@ function Hero() {
           />
           <img
             src="/divider.png"
-            alt={t("hero.altDivider")}
+            alt=""
+            aria-hidden="true"
             className="w-72 md:w-96"
           />
 
           <div className="mt-6 text-3xl font-bold leading-8 text-[var(--color-dark)]">
-            <h1>{t("hero.titleLine1")}</h1>
-            <h1 className="mt-2">
+            <h1>
+              {t("hero.titleLine1")}
+              <br />
               {t("hero.titleLine2Before")}
               <span className="text-[var(--color-primary)]">
                 {" "}
@@ -61,18 +64,18 @@ function Hero() {
             <a
               href={LINKS.booking}
               target="_blank"
-              className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+              rel="noopener noreferrer"
+              className="bg-[var(--color-primary)] border px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
             >
               {t("hero.bookingButton")}
             </a>
 
-            <a
-              href="/menu"
-              target="_blank"
-              className="bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+            <Link
+              to="/menu"
+              className="bg-[var(--color-primary)] border px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
             >
               {t("hero.menuButton")}
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>

@@ -22,6 +22,7 @@ function MenuItems({ menuType }) {
             <img
               src={item}
               alt={`Menu ${index + 1}`}
+              loading="lazy"
               className="w-full shadow-lg"
             />
           </div>

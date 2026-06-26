@@ -76,10 +76,11 @@ function MenuSection() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl" aria-label="Categorie del menu">
         <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
           {menuTabs.map((item) => (
             <button
+              type="button"
               key={item}
               onClick={() => setSelectedMenu(item)}
               className={`border px-5 py-2 text-xs font-bold transition

@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const images = [
   "/gallery/foto1.jpeg",
@@ -77,7 +78,8 @@ function GallerySection() {
 
         <img
           src="/divider.png"
-          alt="Grano e Gusto divider"
+          alt=""
+          aria-hidden="true"
           className="mx-auto mb-6 mt-2 w-32 md:w-76"
         />
 
@@ -94,6 +96,7 @@ function GallerySection() {
                 key={index}
                 src={img}
                 alt={t("gallery.altPictures")}
+                loading="lazy"
                 draggable="false"
                 className="h-64 w-64 shrink-0 object-cover shadow-lg"
               />
@@ -101,13 +104,13 @@ function GallerySection() {
           </motion.div>
         </div>
 
-        <a
-          href="/menu"
-          className="mx-auto mt-8 inline-flex items-center gap-2  bg-[var(--color-primary)] px-5 py-2 text-xs tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
+        <Link
+          to="/menu"
+          className="mx-auto mt-8 inline-flex items-center gap-2  bg-[var(--color-primary)] border px-5 py-2 text-xs tracking-wide text-[var(--color-secondary)] transition hover:bg-transparent hover:text-[var(--color-primary)] hover:border hover:border-[var(--color-primary)]"
         >
           {t("gallery.menuButton")}
           <FaArrowRight />
-        </a>
+        </Link>
       </div>
     </motion.section>
   );

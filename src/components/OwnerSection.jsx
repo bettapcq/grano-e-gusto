@@ -18,7 +18,7 @@ function OwnerSection() {
         ease: "easeOut",
       }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-between">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         <div className="flex flex-col items-center justify-center mx-4 md:mx-0">
           <h2 className="block md:hidden text-3xl px-6 font-bold text-center mb-6">
             {t("owner.titleLineBefore")}{" "}
@@ -29,6 +29,7 @@ function OwnerSection() {
           <img
             src="/mattia.jpeg"
             alt={t("owner.altOwner")}
+            loading="lazy"
             className="w-full h-full md:max-w-sm p-2 object-cover shadow-xl rounded-sm"
           />
         </div>

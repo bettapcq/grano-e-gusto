@@ -9,16 +9,27 @@ function Footer() {
           <img
             src="/logo_footer.png"
             alt="Grano e Gusto"
+            loading="lazy"
             className="h-10 w-auto"
           />
         </div>
         <div className="flex flex-col items-center gap-2">
           <div className="flex gap-4 text-xl">
-            <a href={LINKS.instagram} target="_blank" rel="noopener noreferrer">
+            <a
+              href={LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Apri il profilo Instagram di Grano e Gusto"
+            >
               <FaInstagram size="20" />
             </a>
 
-            <a href={LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
+            <a
+              href={LINKS.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Scrivi a Grano e Gusto su WhatsApp"
+            >
               <FaWhatsapp size={20} />
             </a>
           </div>

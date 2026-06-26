@@ -19,7 +19,8 @@ function MenuHero() {
 
         <img
           src="/divider.png"
-          alt="divider"
+          alt=""
+          aria-hidden="true"
           className="mx-auto mt-2 mb-6 w-50 md:w-70"
         />
 
@@ -28,21 +29,21 @@ function MenuHero() {
           <span className="text-[var(--color-primary)]">
             {t("menuHero.paragraphAccent")}
           </span>{" "}
-          alla
           {t("menuHero.paragraphAfter")}{" "}
         </p>
-        <div className="my-8 py-3 flex w-full flex-col w-auto items-center justify-between min-h-25">
+        <div className="my-8 py-3 flex w-full flex-col items-center justify-between min-h-25">
           <a
             href={LINKS.booking}
             target="_blank"
-            className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
+            rel="noopener noreferrer"
+            className="bg-[var(--color-primary)] border px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
           >
             {t("hero.bookingButton")}
           </a>
 
           <a
             href={LINKS.telephone}
-            target="_blank"
+            aria-label="Chiama Grano e Gusto"
             className="bg-[var(--color-primary)] px-6 py-1 text-sm font-semibold uppercase tracking-wide text-white transition hover:border border-[var(--color-primary)] hover:bg-transparent hover:text-[var(--color-primary)]"
           >
             {t("booking.callButton")}
