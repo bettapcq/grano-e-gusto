@@ -65,5 +65,62 @@
     "desserts": "Desserts",
     "drinks": "Drinks"
   }
+},
+
+  "cookieBanner": {
+    "text": "This website uses only technical cookies necessary for its operation. For more information, please read our ",
+    "button": "Got it"
+  },
+
+"cookiePolicy": {
+  "intro": "This Cookie Policy describes the use of cookies and similar technologies on the Grano e Gusto Pizzeria Ristorante website.",
+
+  "whatAreCookiesTitle": "What are cookies?",
+  "whatAreCookiesText": "Cookies are small text files that websites can store on a user's device while they browse.",
+
+  "technicalCookiesTitle": "Technical cookies",
+  "technicalCookiesText": "The website may use technical cookies that are necessary for the proper functioning of its pages and for managing user preferences. These cookies do not require prior consent.",
+
+  "thirdPartyCookiesTitle": "Third-party cookies",
+  "thirdPartyCookiesText": "The website embeds Google Maps to display the restaurant's location. This service may install cookies or collect technical information related to the user's browsing activity.",
+
+  "externalServicesTitle": "External services",
+  "externalServicesText": "The website contains links to external services, including Lasersoft for online reservations, Google Maps, Instagram and WhatsApp. When users access these services, the processing of their personal data is governed by the respective Privacy Policies and Cookie Policies.",
+
+  "analyticsTitle": "Analytics and profiling cookies",
+  "analyticsText": "The website does not currently use Google Analytics, Meta Pixel or other advertising profiling tools. If analytics or marketing tools are introduced in the future, this Cookie Policy will be updated and, where required by law, users will be asked to provide their consent.",
+
+  "preferencesTitle": "Managing cookie preferences",
+  "preferencesText": "Users can manage or delete cookies through their browser settings. If non-essential cookies are introduced, the website will request the user's consent before they are activated.",
+
+  "updatesTitle": "Updates",
+  "updatesText": "This Cookie Policy may be updated over time. Last updated: June 2026."
+},
+
+"privacyPolicy": {
+  "intro": "This Privacy Policy describes how personal data of users visiting the Grano e Gusto Pizzeria Ristorante website is processed.",
+
+  "controllerTitle": "Data Controller",
+  "telephone": "Telephone",
+
+  "dataTypesTitle": "Types of data collected",
+  "dataTypesText": "The website may process technical browsing data such as IP address, browser information, device information and other data necessary for the proper functioning of the website.",
+
+  "purposesTitle": "Purposes of processing",
+  "purposesText": "Personal data is processed to enable website navigation, provide information about the restaurant, allow users to contact us by phone, email, WhatsApp or Instagram, and redirect users to external services such as Google Maps and the Lasersoft online booking platform.",
+
+  "thirdPartyTitle": "Third-party services",
+  "googleMapsText": "The website embeds Google Maps to display the restaurant's location. Google may collect data related to the use of the map.",
+  "lasersoftText": "Online reservations are managed through the external Lasersoft platform. By clicking the booking button, users are redirected to a third-party website subject to its own Privacy Policy.",
+
+  "legalBasisTitle": "Legal basis",
+  "legalBasisText": "The processing is based on the legitimate interest of the Data Controller in ensuring the proper functioning of the website and providing information about the business. If non-essential cookies or similar technologies are introduced, they will only be used after obtaining the user's consent.",
+
+  "rightsTitle": "User rights",
+  "rightsText": "Users may request access to, correction, deletion, restriction of, or object to the processing of their personal data by contacting us at",
+
+  "updatesTitle": "Updates",
+  "updatesText": "This Privacy Policy may be updated over time. Last updated: June 2026."
 }
+
 }

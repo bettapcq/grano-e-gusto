@@ -65,5 +65,63 @@
     "desserts": "Dolci",
     "drinks": "Bevande"
   }
+},
+
+
+  "cookieBanner": {
+    "text": "Questo sito utilizza esclusivamente cookie tecnici necessari al suo funzionamento. Per maggiori informazioni consulta la ",
+    "button": "Ho capito"
+  },
+
+  "cookiePolicy": {
+  
+    "intro": "Questa Cookie Policy descrive l’utilizzo di cookie e tecnologie simili sul sito web di Grano e Gusto Pizzeria Ristorante.",
+
+    "whatAreCookiesTitle": "Cosa sono i cookie",
+    "whatAreCookiesText": "I cookie sono piccoli file di testo che i siti web possono salvare sul dispositivo dell’utente durante la navigazione.",
+
+    "technicalCookiesTitle": "Cookie tecnici",
+    "technicalCookiesText": " Il sito può utilizzare cookie tecnici necessari al corretto funzionamento delle pagine e alla gestione delle preferenze dell’utente. Questi cookie non richiedono consenso preventivo.",
+    
+    "thirdPartyCookiesTitle": "Cookie di terze parti",
+    "thirdPartyCookiesText": "Il sito incorpora Google Maps per mostrare la posizione del locale. Questo servizio può installare cookie o raccogliere informazioni tecniche relative alla navigazione dell’utente.",
+
+    "externalServicesTitle": "Servizi esterni",
+    "externalServicesText": "Il sito contiene link verso servizi esterni, tra cui Lasersoft per la prenotazione online, Google Maps, Instagram e WhatsApp. Quando l’utente accede a questi servizi, il trattamento dei dati è regolato dalle rispettive informative privacy e cookie policy.",
+
+    "analyticsTitle": "Cookie analitici e di profilazione",
+    "analyticsText": "Al momento il sito non utilizza Google Analytics, Meta Pixel o altri strumenti di profilazione pubblicitaria. Se in futuro verranno introdotti strumenti di analisi o marketing, questa Cookie Policy sarà aggiornata e, se necessario, verrà richiesto il consenso dell’utente.",
+    
+    "preferencesTitle": "Gestione delle preferenze",
+    "preferencesText": "L’utente può gestire o eliminare i cookie attraverso le impostazioni del proprio browser. In caso di cookie non tecnici, il sito richiederà il consenso prima dell’attivazione.",
+    
+    "updatesTitle": "Aggiornamenti",
+    "updatesText": "La presente Cookie Policy può essere aggiornata nel tempo. Ultimo aggiornamento: giugno 2026."  
+  },
+
+  "privacyPolicy": {
+    "intro": "La presente informativa descrive le modalità di trattamento dei dati personali degli utenti che visitano il sito web di Grano e Gusto Pizzeria Ristorante.",
+
+   "controllerTitle": "Titolare del trattamento",
+     "telephone": "Telefono",
+
+    "dataTypesTitle": "Tipologie di dati trattati",
+    "dataTypesText": "Questo sito può trattare dati tecnici di navigazione, come indirizzo IP, informazioni sul browser, dispositivo utilizzato e dati necessari al corretto funzionamento del sito.",
+
+    "purposesTitle": "Finalità del trattamento",
+    "purposesText": "I dati sono trattati per consentire la navigazione del sito, fornire informazioni sull’attività, permettere il contatto tramite telefono, email, WhatsApp o Instagram e indirizzare l’utente verso servizi esterni, come Google Maps e la piattaforma di prenotazione Lasersoft.",
+
+    "thirdPartyTitle": "Servizi di terze parti",
+    "googleMapsText": "Il sito incorpora Google Maps per mostrare la posizione del locale. Google potrebbe raccogliere dati relativi all’utilizzo della mappa.",
+    "lasersoftText": "Le prenotazioni online sono gestite tramite piattaforma esterna Lasersoft. Cliccando sul pulsante di prenotazione, l’utente viene reindirizzato a un sito terzo, soggetto alla relativa informativa privacy.",
+
+    "legalBasisTitle": "Base giuridica",
+    "legalBasisText": "Il trattamento si basa sull’interesse legittimo del titolare a garantire il funzionamento del sito e a fornire informazioni sull’attività. Per eventuali cookie o strumenti non tecnici, il trattamento avviene solo previo consenso dell’utente.",
+
+    "rightsTitle": "Diritti dell’utente",
+    "rightsText": "L’utente può richiedere accesso, rettifica, cancellazione, limitazione o opposizione al trattamento dei propri dati personali scrivendo a",
+
+    "updatesTitle": "Aggiornamenti",
+    "updatesText": "La presente informativa può essere aggiornata nel tempo. Ultimo aggiornamento: giugno 2026."
 }
 }

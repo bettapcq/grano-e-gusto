@@ -5,10 +5,12 @@ import MenuPage from "./pages/MenuPage";
 import RestaurantSchema from "./components/RestaurantSchema";
 import PrivacyPage from "./pages/PrivacyPage";
 import CookiePolicyPage from "./pages/CookiePolicyPage";
+import CookieBanner from "./components/CookieBanner";
 
 function App() {
   return (
     <BrowserRouter>
+      <CookieBanner />
       {/* serve per schema.org */}
       <RestaurantSchema />
       <Routes>
