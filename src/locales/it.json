@@ -123,5 +123,11 @@
 
     "updatesTitle": "Aggiornamenti",
     "updatesText": "La presente informativa può essere aggiornata nel tempo. Ultimo aggiornamento: giugno 2026."
+},
+
+"notFound": {
+  "title": "Pagina non trovata",
+  "text": "La pagina che stai cercando non esiste oppure è stata spostata.",
+  "button": "Torna alla Home"
 }
 }

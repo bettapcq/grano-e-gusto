@@ -121,6 +121,12 @@
 
   "updatesTitle": "Updates",
   "updatesText": "This Privacy Policy may be updated over time. Last updated: June 2026."
+},
+
+"notFound": {
+  "title": "Page not found",
+  "text": "The page you are looking for does not exist or has been moved.",
+  "button": "Back to Home"
 }
 
 }

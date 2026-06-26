@@ -7,6 +7,7 @@ import PrivacyPage from "./pages/PrivacyPage";
 import CookiePolicyPage from "./pages/CookiePolicyPage";
 import CookieBanner from "./components/CookieBanner";
 import ScrollToTop from "./components/ScrollTotop";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
