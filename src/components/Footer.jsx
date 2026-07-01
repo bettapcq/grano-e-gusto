@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { LINKS } from "../config/links";
 
 function Footer() {
@@ -31,6 +31,14 @@ function Footer() {
               aria-label="Scrivi a Grano e Gusto su WhatsApp"
             >
               <FaWhatsapp size={20} />
+            </a>
+            <a
+              href={LINKS.email}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Invia una email a Grano e Gusto"
+            >
+              <FaEnvelope size={20} />
             </a>
           </div>
 

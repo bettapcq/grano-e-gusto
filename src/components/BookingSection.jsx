@@ -90,7 +90,7 @@ function BookingSection() {
               <FaPhoneAlt className="mt-1 text-[var(--color-accent)]" />
               <div>
                 <a href={LINKS.telephone} aria-label="Chiama Grano e Gusto">
-                  011 4918422{" "}
+                  3349184922{" "}
                 </a>
               </div>
             </div>

@@ -29,8 +29,8 @@ function PrivacyPage() {
             </a>
             <br />
             {t("privacyPolicy.telephone")}:{" "}
-            <a href="tel:+390114918422" className="underline">
-              011 4918422
+            <a href="tel:+393349184922" className="underline">
+              3349184922
             </a>
           </p>
 

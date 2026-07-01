@@ -7,7 +7,7 @@ export const restaurantInfo = {
 
   //   image: "https://www.granoegusto.it/og-image.jpg",
 
-  telephone: "+39 0114918422",
+  telephone: "+39 3349184922",
 
   email: "info@granoegusto.it",
 
