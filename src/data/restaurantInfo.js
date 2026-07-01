@@ -1,11 +1,11 @@
 export const restaurantInfo = {
   name: "Grano e Gusto Pizzeria Ristorante",
 
-  //   url: "https://www.granoegusto.it",
+  url: "https://www.granoegusto.it",
 
   logo: "https://www.granoegusto.it/logo_scontornato.png",
 
-  //   image: "https://www.granoegusto.it/og-image.jpg",
+  image: "https://www.granoegusto.it/og-image.png",
 
   telephone: "+39 3349184922",
 
