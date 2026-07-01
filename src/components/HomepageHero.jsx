@@ -36,7 +36,7 @@ function Hero() {
       >
         <div className="flex w-full flex-col items-center text-center">
           <img
-            src="/logo_puro.png"
+            src="/logo-puro.png"
             alt="Grano e Gusto"
             className="w-72 md:w-96"
           />

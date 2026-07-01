@@ -7,10 +7,10 @@ function Footer() {
       <div className="mx-auto flex flex-col items-center gap-6 px-6 py-6 md:grid md:max-w-7xl md:grid-cols-3 md:items-center">
         <div className="flex items-center md:justify-start gap-2 py-4">
           <img
-            src="/logo_footer.png"
+            src="/logo-footer.png"
             alt="Grano e Gusto"
             loading="lazy"
-            className="h-10 w-auto"
+            className="h-30 w-auto"
           />
         </div>
         <div className="flex flex-col items-center gap-2">
