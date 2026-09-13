@@ -48,7 +48,7 @@ function PrivacyPage() {
             {t("privacyPolicy.thirdPartyTitle")}
           </h2>
           <p>{t("privacyPolicy.googleMapsText")}</p>
-          <p>{t("privacyPolicy.lasersoftText")}</p>
+          <p>{t("privacyPolicy.octotableText")}</p>
 
           <h2 className="text-2xl font-bold text-[var(--color-primary)]">
             {t("privacyPolicy.legalBasisTitle")}
