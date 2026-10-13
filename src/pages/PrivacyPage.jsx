@@ -35,7 +35,7 @@ function PrivacyPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-[var(--color-primary)]">
-            {t("privacyPolicy.intrdataTypesTitleo")}
+            {t("privacyPolicy.dataTypesTitle")}
           </h2>
           <p>{t("privacyPolicy.dataTypesText")}</p>
 
