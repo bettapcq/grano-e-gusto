@@ -1,0 +1,133 @@
+
+{
+  "hero": {
+    "altPizza": "Focaccia aux tomates cerises et au basilic",
+    "altDivider": "Séparateur Grano e Gusto",
+    "titleLine1": "Notre terroir,",
+    "titleLine2Before": "votre",
+    "titleLine2Accent": "plaisir",
+    "bookingButton": "Réserver une table",
+    "menuButton": "Voir la carte"
+  },
+
+  "story": {
+    "titleLine1": "Une équipe jeune,",
+    "titleLine2Before": "une",
+    "titleLine2Accent": "passion",
+    "titleLine2After": "partagée.",
+    "paragraph": "Nous croyons qu'un restaurant est avant tout une équipe. Le personnel de salle, la cuisine et la pizzeria travaillent chaque jour avec la même philosophie : faire en sorte que chaque client se sente bien accueilli, choyé et à l'aise, comme à la maison.",
+    "altTeam": "L'équipe de Grano e Gusto"
+  },
+
+  "gallery": {
+    "titleLine": "VIVEZ L'EXPÉRIENCE",
+    "altPictures": "Galerie photos de Grano e Gusto",
+    "menuButton": "DÉCOUVRIR NOTRE CARTE COMPLÈTE"
+  },
+
+  "owner": {
+    "titleLineBefore": "L'âme du",
+    "titleLineAccent": "projet",
+    "altOwner": "Mattia Ambrosi, l'âme de la pizzeria Grano e Gusto",
+    "paragraphBefore": "Au cœur de cette aventure se trouve",
+    "paragraphStrong": "Mattia Ambrosi",
+    "paragraphAfter1": ", un jeune pizzaïolo qui a transformé une passion née presque par hasard en un métier fondé sur la formation, l'expérience et une recherche constante de qualité.",
+    "paragraphAfter2": "Pour Mattia, l'apprentissage ne s'arrête jamais : plus on se perfectionne, plus on est capable d'offrir des produits et un service de qualité."
+  },
+
+  "events": {
+    "titleLine": "NOS ÉVÉNEMENTS",
+    "paragraph1": "Soirées à thème, événements spéciaux et nouveautés de notre univers.",
+    "paragraph2": "Suivez-nous sur Instagram pour ne rien manquer !",
+    "igButton": "Découvrez notre Instagram"
+  },
+
+  "booking": {
+    "titleLine": "Réservez votre table",
+    "callButton": "Appelez-nous",
+    "onlineButton": "Réserver en ligne",
+    "titleLine2": "VENEZ NOUS RENDRE VISITE",
+    "openingDays": "Ouvert 7 jours sur 7",
+    "openingHours1": "19h–23h du lundi au jeudi",
+    "openingHours2": "19h–minuit du vendredi au dimanche"
+  },
+
+  "menuHero": {
+    "titleLine": "NOTRE CARTE",
+    "paragraphBefore": "Chaque plat et chaque pizza sont préparés avec le même",
+    "paragraphAccent": "soin",
+    "paragraphAfter": "apporté au choix des ingrédients, aux techniques de préparation et à la recherche constante du meilleur résultat possible."
+  },
+
+  "menuSection": {
+    "tabs": {
+      "tasting": "Dégustation",
+      "pizzeria": "Pizzeria",
+      "restaurant": "Restaurant",
+      "desserts": "Desserts",
+      "drinks": "Boissons"
+    }
+  },
+
+  "cookieBanner": {
+    "text": "Ce site utilise uniquement des cookies techniques nécessaires à son fonctionnement. Pour plus d'informations, consultez notre ",
+    "button": "J'ai compris"
+  },
+
+  "cookiePolicy": {
+    "intro": "La présente politique relative aux cookies décrit l'utilisation des cookies et des technologies similaires sur le site web de Grano e Gusto Pizzeria Ristorante.",
+
+    "whatAreCookiesTitle": "Que sont les cookies ?",
+    "whatAreCookiesText": "Les cookies sont de petits fichiers texte que les sites web peuvent enregistrer sur l'appareil de l'utilisateur pendant sa navigation.",
+
+    "technicalCookiesTitle": "Cookies techniques",
+    "technicalCookiesText": "Le site peut utiliser des cookies techniques nécessaires au bon fonctionnement des pages et à la gestion des préférences de l'utilisateur. Ces cookies ne nécessitent pas de consentement préalable.",
+
+    "thirdPartyCookiesTitle": "Cookies tiers",
+    "thirdPartyCookiesText": "Le site intègre Google Maps afin d'afficher l'emplacement du restaurant. Ce service peut déposer des cookies ou collecter des informations techniques relatives à la navigation de l'utilisateur.",
+
+    "externalServicesTitle": "Services externes",
+    "externalServicesText": "Le site contient des liens vers des services externes, notamment Octotable pour les réservations en ligne, Google Maps, Instagram et WhatsApp. Lorsque l'utilisateur accède à ces services, le traitement de ses données est régi par leurs politiques de confidentialité et leurs politiques relatives aux cookies respectives.",
+
+    "analyticsTitle": "Cookies analytiques et publicitaires",
+    "analyticsText": "Actuellement, le site n'utilise pas Google Analytics, Meta Pixel ni d'autres outils de profilage publicitaire. Si des outils d'analyse ou de marketing sont introduits à l'avenir, la présente politique relative aux cookies sera mise à jour et, si nécessaire, le consentement de l'utilisateur sera demandé.",
+
+    "preferencesTitle": "Gestion des préférences",
+    "preferencesText": "L'utilisateur peut gérer ou supprimer les cookies dans les paramètres de son navigateur. En cas d'utilisation de cookies non techniques, le site demandera le consentement de l'utilisateur avant leur activation.",
+
+    "updatesTitle": "Mises à jour",
+    "updatesText": "La présente politique relative aux cookies peut être mise à jour au fil du temps. Dernière mise à jour : juin 2026."
+  },
+
+  "privacyPolicy": {
+    "intro": "La présente politique de confidentialité décrit les modalités de traitement des données personnelles des utilisateurs qui visitent le site web de Grano e Gusto Pizzeria Ristorante.",
+
+    "controllerTitle": "Responsable du traitement",
+    "telephone": "Téléphone",
+
+    "dataTypesTitle": "Types de données traitées",
+    "dataTypesText": "Ce site peut traiter des données techniques de navigation, telles que l'adresse IP, les informations relatives au navigateur, l'appareil utilisé et les données nécessaires au bon fonctionnement du site.",
+
+    "purposesTitle": "Finalités du traitement",
+    "purposesText": "Les données sont traitées afin de permettre la navigation sur le site, de fournir des informations sur l'établissement, de faciliter les contacts par téléphone, e-mail, WhatsApp ou Instagram et de rediriger l'utilisateur vers des services externes, tels que Google Maps et la plateforme de réservation Octotable.",
+
+    "thirdPartyTitle": "Services tiers",
+    "googleMapsText": "Le site intègre Google Maps afin d'afficher l'emplacement du restaurant. Google peut collecter des données relatives à l'utilisation de la carte.",
+    "octotableText": "Les réservations en ligne sont gérées par la plateforme externe Octotable. En cliquant sur le bouton de réservation, l'utilisateur est redirigé vers un site tiers, soumis à sa propre politique de confidentialité.",
+
+    "legalBasisTitle": "Base juridique",
+    "legalBasisText": "Le traitement repose sur l'intérêt légitime du responsable du traitement à assurer le bon fonctionnement du site et à fournir des informations sur l'établissement. Pour les éventuels cookies ou outils non techniques, le traitement n'a lieu qu'après obtention du consentement de l'utilisateur.",
+
+    "rightsTitle": "Droits de l'utilisateur",
+    "rightsText": "L'utilisateur peut demander l'accès, la rectification, l'effacement, la limitation du traitement de ses données personnelles ou s'opposer à leur traitement en écrivant à",
+
+    "updatesTitle": "Mises à jour",
+    "updatesText": "La présente politique de confidentialité peut être mise à jour au fil du temps. Dernière mise à jour : juin 2026."
+  },
+
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "button": "Retour à l'accueil"
+  }
+}
