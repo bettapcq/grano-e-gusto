@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function MenuSection() {
   const { t, i18n } = useTranslation();
 
-  const currentLanguage = i18n.language === "en" ? "en" : "it";
+  const currentLanguage = i18n.language.split("-")[0].toLowerCase();
 
   //metodo per prendere tutte le immagini di una cartella e creare un array:
   const menuImages = {
@@ -70,6 +70,39 @@ function MenuSection() {
       ),
       drinks: Object.values(
         import.meta.glob("../assets/menu/en/drinks/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+    },
+
+    fr: {
+      tasting: Object.values(
+        import.meta.glob("../assets/menu/fr/tasting/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      pizzeria: Object.values(
+        import.meta.glob("../assets/menu/fr/pizzeria/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      restaurant: Object.values(
+        import.meta.glob("../assets/menu/fr/restaurant/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      desserts: Object.values(
+        import.meta.glob("../assets/menu/fr/desserts/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
+      drinks: Object.values(
+        import.meta.glob("../assets/menu/fr/drinks/*.{jpg,jpeg,png,webp}", {
           eager: true,
           import: "default",
         }),
