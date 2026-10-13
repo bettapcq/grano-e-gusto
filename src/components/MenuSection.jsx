@@ -11,6 +11,12 @@ function MenuSection() {
   //metodo per prendere tutte le immagini di una cartella e creare un array:
   const menuImages = {
     it: {
+      tasting: Object.values(
+        import.meta.glob("../assets/menu/it/tasting/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
       pizzeria: Object.values(
         import.meta.glob("../assets/menu/it/pizzeria/*.{jpg,jpeg,png,webp}", {
           eager: true,
@@ -38,6 +44,12 @@ function MenuSection() {
     },
 
     en: {
+      tasting: Object.values(
+        import.meta.glob("../assets/menu/en/tasting/*.{jpg,jpeg,png,webp}", {
+          eager: true,
+          import: "default",
+        }),
+      ),
       pizzeria: Object.values(
         import.meta.glob("../assets/menu/en/pizzeria/*.{jpg,jpeg,png,webp}", {
           eager: true,
@@ -65,7 +77,7 @@ function MenuSection() {
     },
   };
 
-  const menuTabs = ["pizzeria", "restaurant", "desserts", "drinks"];
+  const menuTabs = ["tasting", "pizzeria", "restaurant", "desserts", "drinks"];
 
   const [selectedMenu, setSelectedMenu] = useState("pizzeria");
 
@@ -77,7 +89,7 @@ function MenuSection() {
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
       <div className="mx-auto max-w-6xl" aria-label="Categorie del menu">
-        <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
+        <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-5 md:gap-6">
           {menuTabs.map((item) => (
             <button
               type="button"

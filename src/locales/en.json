@@ -60,6 +60,7 @@
 
 "menuSection": {
  "tabs": {
+  "tasting": "Tasting",
     "pizzeria": "Pizzeria",
     "restaurant": "Restaurant",
     "desserts": "Desserts",
